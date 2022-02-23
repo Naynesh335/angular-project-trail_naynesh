@@ -7,13 +7,19 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContentComponent } from './content/content.component';
+import { CoffeeHeaderComponent } from './coffee-header/coffee-header.component';
+import { CoffeeFooterComponent } from './coffee-footer/coffee-footer.component';
+import { BodyContentComponent } from './body-content/body-content.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ContentComponent
+    ContentComponent,
+    CoffeeHeaderComponent,
+    CoffeeFooterComponent,
+    BodyContentComponent
   ],
   imports: [
     BrowserModule,

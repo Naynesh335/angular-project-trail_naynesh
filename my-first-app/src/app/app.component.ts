@@ -6,9 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  f_name="";
-  formdata()
-  {
+// count=0;
+// countval()
+// {
+//   this.count++;
+// }
 
-  }
+  // f_name="";
+  // display_form_data()
+  // {
+  //    this.f_name="fname";
+  // }
 }
