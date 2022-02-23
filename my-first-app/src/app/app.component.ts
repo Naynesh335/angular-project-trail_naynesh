@@ -6,10 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  fname="";
-  img_url=".././assets/images/1.jpg";
-  countval()
+  f_name="";
+  formdata()
   {
-      this.fname="naynesh";
+
   }
 }
