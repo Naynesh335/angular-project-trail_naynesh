@@ -7,24 +7,66 @@
 <!-- <button type="submit" (click)="countval()">submit</button>
 <p>{{count}}</p> -->
 
-<!-- <form>
+<!-- <app-coffee-header></app-coffee-header>
+<app-body-content></app-body-content>
+<app-coffee-footer></app-coffee-footer> -->
+
+
+<!-- <div class="container">
+  <input name="fisrtname" [(ngModel)]="fname">
+  <p>{{fname}}</p>
+</div> -->
+
+<!-- <div class="container">
     <label >First name:</label><br>
-    <input type="text" id="fname" value="Naynesh"><br>
+    <input type="text" [(ngModel)]="fname"><br>
     <label >Last name:</label><br>
-    <input type="text" id="lname" value="Chaudhary"><br>
+    <input type="text" [(ngModel)]="lname"><br>
     <label >Address:</label><br>
-    <input type="text" id="address" value="Ahmedabad"><br>
+    <input type="text" [(ngModel)]="add"><br>
     <label >Phone Number:</label><br>
-    <input type="text" id="phone_num" value="1234567890"><br>
+    <input type="text" [(ngModel)]="pn"><br>
     <label >Email:</label><br>
-    <input type="email" id="email" value="n@gamil.com"><br>
+    <input type="email" [(ngModel)]="email"><br>
     <label >Password:</label><br>
     <input type="password"><br>
 
-    <button type="submit" (click)="display_form_data()">submit</button>
-  </form> -->
+    <button type="button">submit</button><br><br>
+  
+
+  <p>First Name : {{fname}}</p>
+  <p>Last Name : {{lname}}</p>
+  <p>Address : {{add}}</p>
+  <p>Phone Number : {{pn}}</p>
+  <p>Email : {{email}}</p>
+</div> -->
 
 
-<app-coffee-header></app-coffee-header>
-<app-body-content></app-body-content>
-<app-coffee-footer></app-coffee-footer>
+<!-- <div class="container">
+  <input type="number" [(ngModel)]="num">
+  <button type="button" (click)="oddeven()">click</button>
+  <div *ngIf="flag1" >
+    <p>even</p>
+  </div>
+</div> -->
+
+<!-- <div class="container">
+  <div *ngFor="let strarray of stringarrays">
+    <div *ngIf="strarray.length >= 5">
+      {{strarray}}
+    </div>
+  </div>
+</div>
+
+<div class="container">
+    <div *ngFor="let numarray of numarrays; let i=index">
+      <div *ngIf="i%2==0">
+        {{numarray}}
+      </div>
+    </div>
+  </div> -->
+
+  <!-- <app-content [itemrecived]="itemsent"></app-content>
+  <app-content [childarrays]="numarrays"></app-content> -->
+
+  <app-header></app-header>

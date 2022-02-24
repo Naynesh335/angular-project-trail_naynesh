@@ -10,6 +10,7 @@ import { ContentComponent } from './content/content.component';
 import { CoffeeHeaderComponent } from './coffee-header/coffee-header.component';
 import { CoffeeFooterComponent } from './coffee-footer/coffee-footer.component';
 import { BodyContentComponent } from './body-content/body-content.component';
+import { ProductComponent } from './header/product/product.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BodyContentComponent } from './body-content/body-content.component';
     ContentComponent,
     CoffeeHeaderComponent,
     CoffeeFooterComponent,
-    BodyContentComponent
+    BodyContentComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,

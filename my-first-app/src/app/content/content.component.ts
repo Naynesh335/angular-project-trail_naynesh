@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-content',
@@ -11,5 +11,8 @@ export class ContentComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  @Input() itemrecived='';
+   @Input() childarrays:any;
 
 }

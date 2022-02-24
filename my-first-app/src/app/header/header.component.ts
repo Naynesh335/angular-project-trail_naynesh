@@ -11,5 +11,12 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
+ 
+//  counters=["0"];
+
+//  incrementcounter(newItem:string)
+//  {
+
+//  }
 
 }

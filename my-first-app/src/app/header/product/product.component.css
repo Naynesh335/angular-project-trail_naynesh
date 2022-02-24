@@ -1,0 +1,18 @@
+img{
+    height: 500px;
+    width: 350px;
+    float:left;
+}
+.containt{
+    margin-top:100px;
+    float:left;
+}
+.cont{
+    float: left;
+    margin-left: 300px;
+}
+
+.button{
+    float: left;
+    margin-left: 300px;
+}

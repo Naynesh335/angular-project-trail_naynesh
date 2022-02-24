@@ -3,3 +3,12 @@
 <app-footer></app-footer> -->
 
 <!-- <app-footer></app-footer> -->
+<p>{{itemrecived}}</p>
+
+<app-footer [f_recived]="itemrecived"></app-footer>
+
+<div class="container">
+    <div *ngFor="let childarray of childarrays">
+            {{childarray}}
+    </div>
+</div>
