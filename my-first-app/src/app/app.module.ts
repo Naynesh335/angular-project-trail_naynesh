@@ -11,6 +11,7 @@ import { CoffeeHeaderComponent } from './coffee-header/coffee-header.component';
 import { CoffeeFooterComponent } from './coffee-footer/coffee-footer.component';
 import { BodyContentComponent } from './body-content/body-content.component';
 import { ProductComponent } from './header/product/product.component';
+import { SellProductComponent } from './sell-product/sell-product.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ProductComponent } from './header/product/product.component';
     CoffeeHeaderComponent,
     CoffeeFooterComponent,
     BodyContentComponent,
-    ProductComponent
+    ProductComponent,
+    SellProductComponent
   ],
   imports: [
     BrowserModule,

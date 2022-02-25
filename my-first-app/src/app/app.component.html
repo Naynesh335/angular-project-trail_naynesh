@@ -66,7 +66,85 @@
     </div>
   </div> -->
 
-  <!-- <app-content [itemrecived]="itemsent"></app-content>
+<!-- <app-content [itemrecived]="itemsent"></app-content>
   <app-content [childarrays]="numarrays"></app-content> -->
 
-  <app-header></app-header>
+<!-- <app-header></app-header> -->
+
+<!-- <div class="container">
+    <p [ngClass]=" item > 10 ? 'red':'yellow'">{{item}}</p>
+    <p [ngClass]="classfeature()">{{item}}</p>
+  </div> -->
+
+<!-- <div class="container">
+    <div *ngFor="let numarray of numarrays">
+        <p [ngClass]=" numarray%2 == 0 ? 'red':'yellow'">{{numarray}}</p>
+    </div>
+  </div> -->
+
+<!-- <div class="container">
+      <button type="button" (click)="enable()">Enable</button>
+      <button type="button" (click)="disenable()">Disable</button>
+      <p [ngClass]="flag==true ? 'green':'white'">Hello</p>
+
+      <button [ngStyle]="{background:'green'}">click</button>
+      <button [ngStyle]="appendStyle">click</button>
+  </div> -->
+
+<div class="container">
+      
+     <table class="table table-striped" id="my_table">
+       <thead>
+           <tr>
+             <th>Id</th>
+             <th>Name</th>
+             <th>Username</th>
+             <th>Email</th>
+             <th>Address</th>
+             <th>Phone</th>
+             <th>Website</th>
+             <th>Company</th>
+             <th>Hide Row</th>
+           </tr>
+       </thead>
+       <tbody>
+         <tr *ngFor="let user of Users">
+           <td>{{ user.id }}</td>
+           <td>{{ user.name }}</td>
+           <td>{{ user.username }}</td>
+           <td>{{ user.email }}</td>
+           <td>{{ user.address.city }}</td>
+           <td>{{ user.phone }}</td>
+           <td>{{ user.website }}</td>
+           <td>{{ user.company.name }}</td>
+           <td><button id="remove" (click)="deleteRow(user)">Hide</button></td>
+         </tr>
+       </tbody>
+     </table>
+   </div>
+
+
+
+
+
+<!-- <table class="table table-striped" id="my_table">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Product Name</th>
+      <th>Price</th>
+      <th> Total Quntity</th>
+      <th> Total Pay</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of product">
+        <td>{{ p.id }}</td>
+        <td>{{ p.p_name }}</td>
+        <td>{{ p.price }}</td>
+        <td>{{ p.add }}</td>
+        <td>{{ p.cost}}</td>
+    </tr>
+  </tbody>
+</table>
+<app-sell-product (newItemEvent)="purch_product($event)"></app-sell-product> -->
