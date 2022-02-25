@@ -41,7 +41,7 @@ export class AppComponent {
   // stringarrays = ["suart", "ahmedabad", "jaipur", "hydrabad", "goa", "vav"];
 
 
-  numarrays = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  //numarrays = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
   // itemsent = "laptop";
 
@@ -51,14 +51,14 @@ export class AppComponent {
   // }
 
 
-  // flag = false;
-  // enable() {
-  //   this.flag = true;
-  // }
+  flag = false;
+  enable() {
+    this.flag = true;
+  }
 
-  // disenable() {
-  //   this.flag = false;
-  // }
+  disenable() {
+    this.flag = false;
+  }
 
   // appendStyle={color:'red',background:'green', margin:'50px'};
 
