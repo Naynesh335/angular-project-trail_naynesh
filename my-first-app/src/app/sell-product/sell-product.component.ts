@@ -62,8 +62,7 @@ export class SellProductComponent implements OnInit {
       "presentstock": "50",
       "add": 0,
       "cost":0
-    },
-    {
+    },{
       "id": 6,
       "p_name": "raice",
       "price": 40,

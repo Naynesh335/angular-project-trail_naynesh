@@ -51,14 +51,14 @@ export class AppComponent {
   // }
 
 
-  flag = false;
-  enable() {
-    this.flag = true;
-  }
+  // flag = false;
+  // enable() {
+  //   this.flag = true;
+  // }
 
-  disenable() {
-    this.flag = false;
-  }
+  // disenable() {
+  //   this.flag = false;
+  // }
 
   // appendStyle={color:'red',background:'green', margin:'50px'};
 
@@ -301,10 +301,10 @@ export class AppComponent {
 //     this.Users.splice(index, 1);
 // }
 
-// product:any =[];
+product:any =[];
 
-// purch_product(prodt:any){
-//   this.product.push(prodt);
+purch_product(prodt:any){
+  this.product.push(prodt);
   // let i=prodt.id;
   // this.product[i-1]=prodt;
   // for(let i=0;i<=this.product.length;i++)
@@ -319,7 +319,7 @@ export class AppComponent {
   //     delete product
   //   }
   // }
-// }
+}
  
 
 
