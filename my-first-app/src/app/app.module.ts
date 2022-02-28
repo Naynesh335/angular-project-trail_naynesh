@@ -12,6 +12,8 @@ import { CoffeeFooterComponent } from './coffee-footer/coffee-footer.component';
 import { BodyContentComponent } from './body-content/body-content.component';
 import { ProductComponent } from './header/product/product.component';
 import { SellProductComponent } from './sell-product/sell-product.component';
+import { DatetimeService } from './datetime.service';
+import { UserInfoService } from './user-info.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,7 @@ import { SellProductComponent } from './sell-product/sell-product.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [DatetimeService, UserInfoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

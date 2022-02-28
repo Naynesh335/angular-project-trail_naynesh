@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { DatetimeService } from './datetime.service';
+import { UserInfoService } from './user-info.service'
 
 @Component({
   selector: 'app-root',
@@ -6,16 +8,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  constructor(private Info:UserInfoService){
+
+  }
+
+  // getdate=this.dt.today;
+  // getInfo=this.dt.Info();
+  user_Info=this.Info.Users;
+
   // count=0;
   // countval()
   // {
   //   this.count++;
   // }
 
-  // f_name="";
+  // fname="";
   // display_form_data()
   // {
-  //    this.f_name="fname";
+  //    this.fname="fname";
   // }
 
   // fname="";
@@ -25,18 +36,18 @@ export class AppComponent {
   // email="";
 
 
-  // flag=false;
-  // num=0;
-  // oddeven()
-  // {
-  //     if(this.num%2==0)
-  //     {
-  //       this.flag=true;
-  //     }
-  //     else{
-  //       this.flag=false;
-  //     }
-  // }
+//   flag=false;
+//   num=0;
+//   oddeven()
+//   {
+//       if(this.num%2==0)
+//       {
+//         this.flag=true;
+//       }
+//       else{
+//         this.flag=false;
+//       }
+//  }
 
   // stringarrays = ["suart", "ahmedabad", "jaipur", "hydrabad", "goa", "vav"];
 
@@ -320,6 +331,9 @@ purch_product(prodt:any){
   //   }
   // }
 }
+
+
+
  
 
 

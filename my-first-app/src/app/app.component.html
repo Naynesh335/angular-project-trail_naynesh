@@ -11,11 +11,10 @@
 <app-body-content></app-body-content>
 <app-coffee-footer></app-coffee-footer> -->
 
-
-<!-- <div class="container">
-  <input name="fisrtname" [(ngModel)]="fname">
+ <!-- <div class="container">
+  <input type="text" [(ngModel)]="fname" ngModel>
   <p>{{fname}}</p>
-</div> -->
+</div>  -->
 
 <!-- <div class="container">
     <label >First name:</label><br>
@@ -41,14 +40,14 @@
   <p>Email : {{email}}</p>
 </div> -->
 
-
-<!-- <div class="container">
+<!-- 
+ <div class="container">
   <input type="number" [(ngModel)]="num">
   <button type="button" (click)="oddeven()">click</button>
-  <div *ngIf="flag1" >
+  <div *ngIf="flag" >
     <p>even</p>
   </div>
-</div> -->
+</div>  -->
 
 <!-- <div class="container">
   <div *ngFor="let strarray of stringarrays">
@@ -86,7 +85,7 @@
       <button type="button" (click)="enable()">Enable</button>
       <button type="button" (click)="disenable()">Disable</button>
       <p [ngClass]="flag==true ? 'green':'white'">Hello</p>
-
+ 
       <button [ngStyle]="{background:'green'}">click</button>
       <button [ngStyle]="appendStyle">click</button>
   </div> -->
@@ -127,7 +126,7 @@
 
 
 
-<table class="table table-striped" id="my_table">
+<!-- <table class="table table-striped" id="my_table">
   <thead>
     <tr>
       <th>Id</th>
@@ -147,4 +146,39 @@
     </tr>
   </tbody>
 </table>
-<app-sell-product (newItemEvent)="purch_product($event)"></app-sell-product>
+<app-sell-product (newItemEvent)="purch_product($event)"></app-sell-product> -->
+
+<!-- <p>{{getdate}}</p>
+<p>{{getInfo}}</p> -->
+
+<div class="container">
+      
+     <table class="table table-striped" id="my_table">
+       <thead>
+           <tr>
+             <th>Id</th>
+             <th>Name</th>
+             <th>Username</th>
+             <th>Email</th>
+             <th>Address</th>
+             <th>Phone</th>
+             <th>Website</th>
+             <th>Company</th>
+             <!-- <th>Hide Row</th> -->
+           </tr>
+       </thead>
+       <tbody>
+         <tr *ngFor="let user of user_Info">
+           <td>{{ user.id }}</td>
+           <td>{{ user.name }}</td>
+           <td>{{ user.username }}</td>
+           <td>{{ user.email }}</td>
+           <td>{{ user.address.city }}</td>
+           <td>{{ user.phone }}</td>
+           <td>{{ user.website }}</td>
+           <td>{{ user.company.name }}</td>
+           <!-- <td><button id="remove" (click)="deleteRow(user)">Hide</button></td> -->
+         </tr>
+       </tbody>
+     </table>
+   </div>
