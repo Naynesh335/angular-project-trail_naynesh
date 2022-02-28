@@ -340,20 +340,32 @@ export class AppComponent {
 // }
 
 
-user:any =[ {
-  "email" : '',
-  "password" : '',
-  "address1" : '',
-  "address2" : '',
- "city" : '',
- "state" : '',
- "zip": ''
-}];
+// user:any =[ {
+//   "email" : 'a@gmail.com',
+//   "password" : 'a123',
+//   "address1" : 'aadd1',
+//   "address2" : 'aadd2',
+//  "city" : 'acity',
+//  "state" : 'astate',
+//  "zip": '1'
+// }];
  
-onSubmitofform(user:any)
-{
-  this.Info.userdata.push(user);
-}
+// onSubmitofform(user:any)
+// {
+//   this.Info.userdata.push(user);
+// }
 
+num=1;
+numberarray=[1,2,3,4,5,6,7,8,9,10];
+
+multiply(num:number)
+{
+  
+  this.numberarray=[1,2,3,4,5,6,7,8,9,10];
+  for(let i=0;i<10;i++)
+  {
+     this.numberarray[i] = this.numberarray[i]*num;
+  }
+}
 
 }

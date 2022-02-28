@@ -194,7 +194,7 @@
    <p>Address : {{this.Info.address}}</p>
    <p>Phone Number : {{this.Info.phonenumber}}</p>
    <p>Email : {{this.Info.email}}</p> -->
-   <form #ngForm="ngForm" (ngSubmit)="onSubmitofform(ngForm.value)">
+   <!-- <form #ngForm="ngForm" (ngSubmit)="onSubmitofform(ngForm.value)">
     <div class="form-row">
       <div class="form-group col-lg-6">
         <label for="inputEmail4">Email</label>
@@ -238,4 +238,10 @@
     <button type="submit" class="btn btn-primary" [disabled]="!ngForm.form.valid">Sign in</button>
   </form>
 
-  <app-header></app-header>
+  <app-header></app-header> -->
+<label>Enter The Number</label>
+  <input type="number" name="num" [(ngModel)]="num"/>
+  <button type="button" (click)="multiply(num)">click</button>
+  <div *ngFor="let number of numberarray; index as i">
+    <p>{{num}} * {{i+1}} = {{number}}</p>
+  </div>
