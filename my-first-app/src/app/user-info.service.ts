@@ -7,7 +7,16 @@ export class UserInfoService {
 
   constructor() { }
 
- public counter=0;
+//  public counter=0;
+//  Increment()
+//  {
+//    return this.counter++;
+//  }
+public firstname="";
+public lastname="";
+public address="";
+public phonenumber="";
+public email=""
 
   // Users : any = [
   //       {

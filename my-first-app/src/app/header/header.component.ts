@@ -12,8 +12,25 @@ export class HeaderComponent implements OnInit {
   {
 
   }
+  // child_counter=this.Info.counter;
+
+  fname="";
+  lname="";
+  address="";
+  phonenum="";
+  email="";
    
-  child_counter=this.Info.counter;
+  formdata()
+  {
+    this.Info.firstname=this.fname;
+    this.Info.lastname=this.lname;
+    this.Info.address=this.address;
+    this.Info.phonenumber=this.phonenum;
+    this.Info.email=this.email;
+  }
+
+
+
   ngOnInit(): void {
   }
  

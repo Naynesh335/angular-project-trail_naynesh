@@ -13,4 +13,20 @@
 <app-product (newItemEvent)="incrementcounter($evenet)"></app-product> -->
 
 <!-- <app-product></app-product> -->
-<p>Child Counter : {{this.Info.counter}}</p>
+<!-- <p>Child Counter : {{this.Info.counter}}</p> -->
+ <div class="container">
+    <label >First name:</label><br>
+    <input type="text" [(ngModel)]="fname"><br>
+    <label >Last name:</label><br>
+    <input type="text" [(ngModel)]="lname"><br>
+    <label >Address:</label><br>
+    <input type="text" [(ngModel)]="address"><br>
+    <label >Phone Number:</label><br>
+    <input type="text" [(ngModel)]="phonenum"><br>
+    <label >Email:</label><br>
+    <input type="email" [(ngModel)]="email"><br>
+    <label >Password:</label><br>
+    <input type="password"><br>
+
+    <button type="button" (click)="formdata()">submit</button><br><br>
+</div> 

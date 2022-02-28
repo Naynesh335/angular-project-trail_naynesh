@@ -13,12 +13,13 @@ export class AppComponent {
 
   }
 
-  parent_counter=this.Info.counter;
-  Increment()
-  {
-    this.Info.counter++;
-    this.parent_counter=this.Info.counter;
-  }
+  // parent_counter=this.Info.counter;
+  
+  // Increment()
+  // {
+  //   this.Info.counter++;
+  //   this.parent_counter=this.Info.counter;
+  // }
   // getdate=this.dt.today;
   // getInfo=this.dt.Info();
   //user_Info : any=this.Info.Users;
