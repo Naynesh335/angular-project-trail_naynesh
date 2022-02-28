@@ -9,13 +9,19 @@ import { UserInfoService } from './user-info.service'
 })
 export class AppComponent {
 
-  constructor(private Info:UserInfoService){
+  constructor(public Info:UserInfoService){
 
   }
 
+  parent_counter=this.Info.counter;
+  Increment()
+  {
+    this.Info.counter++;
+    this.parent_counter=this.Info.counter;
+  }
   // getdate=this.dt.today;
   // getInfo=this.dt.Info();
-  user_Info=this.Info.Users;
+  //user_Info : any=this.Info.Users;
 
   // count=0;
   // countval()
@@ -308,29 +314,29 @@ export class AppComponent {
 //   ];
 
 //   deleteRow(user:any){
-//     const index = this.Users.indexOf(user);
-//     this.Users.splice(index, 1);
+//     const index = this.user_Info.indexOf(user);
+//     this.user_Info.splice(index, 1);
 // }
 
-product:any =[];
+// product:any =[];
 
-purch_product(prodt:any){
-  this.product.push(prodt);
-  // let i=prodt.id;
-  // this.product[i-1]=prodt;
-  // for(let i=0;i<=this.product.length;i++)
-  // {
-  //   if(prodt.id !=this.product[i].id)
-  //   {
-  //     this.product.push(prodt);
-  //     return;
-  //   }
-  //   else{
-  //     let i=prodt.id;
-  //     delete product
-  //   }
-  // }
-}
+// purch_product(prodt:any){
+//   this.product.push(prodt);
+//   // let i=prodt.id;
+//   // this.product[i-1]=prodt;
+//   // for(let i=0;i<=this.product.length;i++)
+//   // {
+//   //   if(prodt.id !=this.product[i].id)
+//   //   {
+//   //     this.product.push(prodt);
+//   //     return;
+//   //   }
+//   //   else{
+//   //     let i=prodt.id;
+//   //     delete product
+//   //   }
+//   // }
+// }
 
 
 

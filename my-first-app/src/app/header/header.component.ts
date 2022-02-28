@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserInfoService } from '.././user-info.service';
 
 @Component({
   selector: 'app-header',
@@ -7,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(public Info : UserInfoService)
+  {
 
+  }
+   
+  child_counter=this.Info.counter;
   ngOnInit(): void {
   }
  
@@ -18,5 +23,7 @@ export class HeaderComponent implements OnInit {
 //  {
 
 //  }
+
+
 
 }

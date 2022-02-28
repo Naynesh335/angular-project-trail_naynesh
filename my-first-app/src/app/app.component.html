@@ -151,7 +151,7 @@
 <!-- <p>{{getdate}}</p>
 <p>{{getInfo}}</p> -->
 
-<div class="container">
+<!-- <div class="container">
       
      <table class="table table-striped" id="my_table">
        <thead>
@@ -164,7 +164,7 @@
              <th>Phone</th>
              <th>Website</th>
              <th>Company</th>
-             <!-- <th>Hide Row</th> -->
+             <th>Hide Row</th>
            </tr>
        </thead>
        <tbody>
@@ -177,8 +177,12 @@
            <td>{{ user.phone }}</td>
            <td>{{ user.website }}</td>
            <td>{{ user.company.name }}</td>
-           <!-- <td><button id="remove" (click)="deleteRow(user)">Hide</button></td> -->
+           <td><button id="remove" (click)="deleteRow(user)">Hide</button></td>
          </tr>
        </tbody>
      </table>
-   </div>
+   </div> -->
+
+   <button type="button" (click)="Increment()">click</button>
+   <p>Parent Counter : {{parent_counter}}</p>
+   <app-header></app-header>
