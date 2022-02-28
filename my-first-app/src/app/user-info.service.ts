@@ -12,11 +12,22 @@ export class UserInfoService {
 //  {
 //    return this.counter++;
 //  }
-public firstname="";
-public lastname="";
-public address="";
-public phonenumber="";
-public email=""
+
+// public firstname="";
+// public lastname="";
+// public address="";
+// public phonenumber="";
+// public email="";
+userdata:any =[ {
+  "email" : 'a@gmail.com',
+  "password" : 'a123',
+  "address1" : 'aadd1',
+  "address2" : 'aadd2',
+ "city" : 'acity',
+ "state" : 'astate',
+ "zip": '1'
+}];
+ 
 
   // Users : any = [
   //       {

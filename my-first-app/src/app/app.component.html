@@ -187,10 +187,55 @@
    <p>Parent Counter : {{this.Info.counter}}</p>
    <app-header></app-header> -->
 
-   <app-header></app-header>
+   <!-- <app-header></app-header>
 
    <p>First Name : {{this.Info.firstname}}</p>
    <p>Last Name : {{this.Info.lastname}}</p>
    <p>Address : {{this.Info.address}}</p>
    <p>Phone Number : {{this.Info.phonenumber}}</p>
-   <p>Email : {{this.Info.email}}</p>
+   <p>Email : {{this.Info.email}}</p> -->
+   <form #ngForm="ngForm" (ngSubmit)="onSubmitofform(ngForm.value)">
+    <div class="form-row">
+      <div class="form-group col-lg-6">
+        <label for="inputEmail4">Email</label>
+        <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="email" [ngModel]="user.email" required>
+      </div>
+      <div class="form-group col-lg-6">
+        <label for="inputPassword4">Password</label>
+        <input type="password" class="form-control" id="inputPassword4" placeholder="Password" name="password" [ngModel]="user.password" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress">Address</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" name="address1" [ngModel]="user.address1" required>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress2">Address 2</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" name="address2" [ngModel]="user.address2" required>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-lg-6">
+        <label for="inputCity">City</label>
+        <input type="text" class="form-control" id="inputCity" name="city" [ngModel]="user.city" required>
+      </div>
+      <div class="form-group col-lg-4">
+        <label for="inputState">State</label>
+            <input type="text" class="form-control" id="inputState" name="state" [ngModel]="user.state" required>
+      </div>
+      <div class="form-group col-lg-2">
+        <label for="inputZip">Zip</label>
+        <input type="text" class="form-control" id="inputZip" name="zip" [ngModel]="user.zip" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck" required>
+        <label class="form-check-label" for="gridCheck">
+          Check me out
+        </label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="!ngForm.form.valid">Sign in</button>
+  </form>
+
+  <app-header></app-header>

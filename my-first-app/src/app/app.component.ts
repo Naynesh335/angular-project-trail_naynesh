@@ -340,8 +340,20 @@ export class AppComponent {
 // }
 
 
-
+user:any =[ {
+  "email" : '',
+  "password" : '',
+  "address1" : '',
+  "address2" : '',
+ "city" : '',
+ "state" : '',
+ "zip": ''
+}];
  
+onSubmitofform(user:any)
+{
+  this.Info.userdata.push(user);
+}
 
 
 }

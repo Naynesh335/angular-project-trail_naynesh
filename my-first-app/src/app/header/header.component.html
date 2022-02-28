@@ -14,7 +14,7 @@
 
 <!-- <app-product></app-product> -->
 <!-- <p>Child Counter : {{this.Info.counter}}</p> -->
- <div class="container">
+ <!-- <div class="container">
     <label >First name:</label><br>
     <input type="text" [(ngModel)]="fname"><br>
     <label >Last name:</label><br>
@@ -29,4 +29,32 @@
     <input type="password"><br>
 
     <button type="button" (click)="formdata()">submit</button><br><br>
-</div> 
+</div>  -->
+
+
+<div class="container">
+        
+       <table class="table table-striped" id="my_table">
+         <thead>
+             <tr>
+               <th>Email</th>
+               <th>Address1</th>
+               <th>Address2</th>
+               <th>City</th>
+               <th>State</th>
+               <th>Zip</th>
+             </tr>
+         </thead>
+         <tbody>
+           <tr *ngFor="let user of Info.userdata">
+             <td>{{ user.email }}</td>
+             <td>{{ user.address1 }}</td>
+             <td>{{ user.address2 }}</td>
+             <td>{{ user.city }}</td>
+             <td>{{ user.state }}</td>
+             <td>{{ user.zip }}</td>
+           </tr>
+         </tbody>
+       </table>
+     </div>
+<p>email : {{this.Info.userdata[1].email}}</p>
