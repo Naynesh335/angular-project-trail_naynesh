@@ -36,11 +36,23 @@ export class AppComponent {
   //    this.fname="fname";
   // }
 
-  // fname="";
-  // lname="";
-  // add="";
-  // pn="";
-  // email="";
+  fname="";
+  lname="";
+  add="";
+  phone_num="";
+  email="";
+  start_date="";
+  end_date="";
+  s_date:any;
+  e_date:any;
+
+  hoteldata()
+  {
+    this.s_date = new Date(this.start_date);
+    this.e_date = new Date(this.end_date);
+    console.log("Total Pay " + (Math.ceil(Math.abs(this.s_date.getTime() - this.e_date.getTime()))/(1000 * 3600 * 24))*100);
+  }
+  
 
 
 //   flag=false;
@@ -355,17 +367,17 @@ export class AppComponent {
 //   this.Info.userdata.push(user);
 // }
 
-num=1;
-numberarray=[1,2,3,4,5,6,7,8,9,10];
+// num=1;
+// numberarray=[1,2,3,4,5,6,7,8,9,10];
 
-multiply(num:number)
-{
+// multiply(num:number)
+// {
   
-  this.numberarray=[1,2,3,4,5,6,7,8,9,10];
-  for(let i=0;i<10;i++)
-  {
-     this.numberarray[i] = this.numberarray[i]*num;
-  }
-}
+//   this.numberarray=[1,2,3,4,5,6,7,8,9,10];
+//   for(let i=0;i<10;i++)
+//   {
+//      this.numberarray[i] = this.numberarray[i]*num;
+//   }
+// }
 
 }

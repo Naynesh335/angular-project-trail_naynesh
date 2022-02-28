@@ -239,9 +239,31 @@
   </form>
 
   <app-header></app-header> -->
-<label>Enter The Number</label>
+<!-- <label>Enter The Number</label>
   <input type="number" name="num" [(ngModel)]="num"/>
   <button type="button" (click)="multiply(num)">click</button>
-  <div *ngFor="let number of numberarray; index as i">
-    <p>{{num}} * {{i+1}} = {{number}}</p>
-  </div>
+    <p>{{num}} * {{count}} = {{mul}}</p> -->
+
+
+    <div class="container">
+        <label >First name:</label><br>
+        <input type="text" [(ngModel)]="fname"><br>
+        <label >Last name:</label><br>
+        <input type="text" [(ngModel)]="lname"><br>
+        <label >Address:</label><br>
+        <input type="text" [(ngModel)]="add"><br>
+        <label >Phone Number:</label><br>
+        <input type="text" [(ngModel)]="phone_num"><br>
+        <label >Start Date</label><br>
+        <input type="date" [(ngModel)]="start_date"><br>
+        <label >End Date</label><br>
+        <input type="date" [(ngModel)]="end_date"><br>
+        <label >Email:</label><br>
+        <input type="email" [(ngModel)]="email"><br>
+        <label >Password:</label><br>
+        <input type="password"><br>
+    
+        <button type="button" (click)="hoteldata()">submit</button><br><br>
+      
+  
+    </div>
