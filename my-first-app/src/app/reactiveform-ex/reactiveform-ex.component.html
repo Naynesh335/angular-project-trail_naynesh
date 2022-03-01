@@ -1,0 +1,19 @@
+<p>reactiveform-ex works!</p>
+
+<div class="container">
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+        <div>
+            <label>Name : </label>
+            <input type="text" formControlName="name">
+        </div>
+        <div>
+            <label>Email : </label>
+            <input type="email" formControlName="email">
+        </div>
+        <div>
+            <label>Message : </label>
+            <input type="text" formControlName="message">
+        </div>
+        <button type="submit" class=" btn btn-primary" [disabled]="myForm.invalid">submit</button>
+    </form>
+</div>

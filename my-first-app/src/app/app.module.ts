@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +16,8 @@ import { ProductComponent } from './header/product/product.component';
 import { SellProductComponent } from './sell-product/sell-product.component';
 import { DatetimeService } from './datetime.service';
 import { UserInfoService } from './user-info.service';
+import { ReactiveformExComponent } from './reactiveform-ex/reactiveform-ex.component';
+import { ReactiveAddressFormComponent } from './reactive-address-form/reactive-address-form.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +29,15 @@ import { UserInfoService } from './user-info.service';
     CoffeeFooterComponent,
     BodyContentComponent,
     ProductComponent,
-    SellProductComponent
+    SellProductComponent,
+    ReactiveformExComponent,
+    ReactiveAddressFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [DatetimeService, UserInfoService],
   bootstrap: [AppComponent]
