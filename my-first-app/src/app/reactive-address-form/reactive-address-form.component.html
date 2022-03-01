@@ -27,6 +27,14 @@
             <label>Age : </label><br>
             <input type="number" formControlName="age">
         </div><br>
+        <div>
+            <label>Start Date : </label><br>
+            <input type="date" formControlName="sdate">
+        </div><br>
+        <div>
+            <label>End Date : </label><br>
+            <input type="date" formControlName="edate">
+        </div><br>
         <button type="submit" class=" btn btn-primary" [disabled]="!myForm.valid">submit</button>
     </form>
 </div>
