@@ -270,4 +270,29 @@
 
 
     <!-- <app-reactiveform-ex></app-reactiveform-ex> -->
-    <app-reactive-address-form></app-reactive-address-form>
+    <!-- <app-reactive-address-form></app-reactive-address-form> -->
+  
+    
+    <div class="container">
+      
+      <table class="table table-striped" id="my_table">
+        <thead>
+            <tr>
+              <th>Id</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Phone</th>
+              <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of results">
+            <td>{{ user.userId }}</td>
+            <td>{{ user.firstName }}</td>
+            <td>{{ user.lastName }}</td>
+            <td>{{ user.phoneNumber }}</td>
+            <td>{{ user.emailAddress }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>

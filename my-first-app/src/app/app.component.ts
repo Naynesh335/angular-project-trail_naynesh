@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { DatetimeService } from './datetime.service';
-import { UserInfoService } from './user-info.service'
+import { UserInfoService } from './user-info.service';
+import { HttpClient } from '@angular/common/http';
+import { HttpDataRequestService } from './http-data-request.service'
+
 
 @Component({
   selector: 'app-root',
@@ -12,9 +15,20 @@ export class AppComponent {
     throw new Error('Method not implemented.');
   }
 
-  constructor(public Info:UserInfoService){
+  constructor(private ht:HttpDataRequestService){
 
   }
+
+  results:any;
+  
+  ngOnInit() { 
+    this.ht.getdata().subscribe((data) => this.show(data));
+  } 
+
+  show(data:any){
+    this.results = data;
+  }
+
 
   // parent_counter=this.Info.counter;
   
@@ -39,22 +53,22 @@ export class AppComponent {
   //    this.fname="fname";
   // }
 
-  fname="";
-  lname="";
-  add="";
-  phone_num="";
-  email="";
-  start_date="";
-  end_date="";
-  s_date:any;
-  e_date:any;
+  // fname="";
+  // lname="";
+  // add="";
+  // phone_num="";
+  // email="";
+  // start_date="";
+  // end_date="";
+  // s_date:any;
+  // e_date:any;
 
-  hoteldata()
-  {
-    this.s_date = new Date(this.start_date);
-    this.e_date = new Date(this.end_date);
-    console.log("Total Pay " + (Math.ceil(Math.abs(this.s_date.getTime() - this.e_date.getTime()))/(1000 * 3600 * 24))*100);
-  }
+  // hoteldata()
+  // {
+  //   this.s_date = new Date(this.start_date);
+  //   this.e_date = new Date(this.end_date);
+  //   console.log("Total Pay " + (Math.ceil(Math.abs(this.s_date.getTime() - this.e_date.getTime()))/(1000 * 3600 * 24))*100);
+  // }
   
 
 
