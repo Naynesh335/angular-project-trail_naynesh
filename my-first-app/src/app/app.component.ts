@@ -29,6 +29,19 @@ export class AppComponent {
     this.results = data;
   }
 
+  id='';
+  fname="";
+  lname="";
+  phone_num="";
+  email="";
+
+  GetData(id:any){
+this.fname=this.results[id-1].firstName;
+this.lname=this.results[id-1].lastName;
+this.phone_num=this.results[id-1].phoneNumber;
+this.email=this.results[id-1].emailAddress;
+  }
+
 
   // parent_counter=this.Info.counter;
   
@@ -53,11 +66,12 @@ export class AppComponent {
   //    this.fname="fname";
   // }
 
+  // id='';
   // fname="";
   // lname="";
-  // add="";
   // phone_num="";
   // email="";
+  // add="";
   // start_date="";
   // end_date="";
   // s_date:any;

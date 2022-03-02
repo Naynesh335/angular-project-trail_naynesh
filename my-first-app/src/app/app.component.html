@@ -11,7 +11,7 @@
 <app-body-content></app-body-content>
 <app-coffee-footer></app-coffee-footer> -->
 
- <!-- <div class="container">
+<!-- <div class="container">
   <input type="text" [(ngModel)]="fname" ngModel>
   <p>{{fname}}</p>
 </div>  -->
@@ -183,18 +183,18 @@
      </table>
    </div> -->
 
-   <!-- <button type="button" (click)="Info.Increment()">click</button>
+<!-- <button type="button" (click)="Info.Increment()">click</button>
    <p>Parent Counter : {{this.Info.counter}}</p>
    <app-header></app-header> -->
 
-   <!-- <app-header></app-header>
+<!-- <app-header></app-header>
 
    <p>First Name : {{this.Info.firstname}}</p>
    <p>Last Name : {{this.Info.lastname}}</p>
    <p>Address : {{this.Info.address}}</p>
    <p>Phone Number : {{this.Info.phonenumber}}</p>
    <p>Email : {{this.Info.email}}</p> -->
-   <!-- <form #ngForm="ngForm" (ngSubmit)="onSubmitofform(ngForm.value)">
+<!-- <form #ngForm="ngForm" (ngSubmit)="onSubmitofform(ngForm.value)">
     <div class="form-row">
       <div class="form-group col-lg-6">
         <label for="inputEmail4">Email</label>
@@ -269,11 +269,11 @@
     </div> -->
 
 
-    <!-- <app-reactiveform-ex></app-reactiveform-ex> -->
-    <!-- <app-reactive-address-form></app-reactive-address-form> -->
-  
-    
-    <div class="container">
+<!-- <app-reactiveform-ex></app-reactiveform-ex> -->
+<!-- <app-reactive-address-form></app-reactive-address-form> -->
+
+
+<!-- <div class="container">
       
       <table class="table table-striped" id="my_table">
         <thead>
@@ -295,4 +295,26 @@
           </tr>
         </tbody>
       </table>
-    </div>
+    </div> -->
+
+
+<div class="container">
+  <label>You need to enter the ID:</label><br>
+  <input type="number" [(ngModel)]="id"><br>
+  <label>First name:</label><br>
+  <input type="text" value="fname" placeholder="{{fname}}" [(ngModel)]="fname"><br>
+  <label>Last name:</label><br>
+  <input type="text" value="lname" placeholder="{{lname}}" [(ngModel)]="lname"><br>
+  <label>Phone Number:</label><br>
+  <input type="text" value="phone_num" placeholder="{{phone_num}}" [(ngModel)]="phone_num"><br>
+  <label>Email:</label><br>
+  <input type="email" value="email" placeholder="{{email}}" [(ngModel)]="email"><br>
+  <br>
+  <button type="button" (click)="GetData(id)">Get Data</button>
+  <br>
+
+  <p>First Name : {{fname}}</p>
+  <p>Last Name : {{lname}}</p>
+  <p>Phone Number : {{phone_num}}</p>
+  <p>Email : {{email}}</p>
+</div>
